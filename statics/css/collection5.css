@@ -1,0 +1,15 @@
+/************************************* product css start *************************************/
+/*=====================================
+    product-ratting css
+=====================================*/
+.product-ratting span.pro-ratting {
+    display: flex;
+}
+.product-ratting span.pro-ratting i {
+    color: #ffb503;
+    margin: 0px 3px 0px 0px;
+}
+.product-ratting span.pro-ratting i:first-child {
+    margin: 0;
+}
+

@@ -1,0 +1,90 @@
+/************************************* blog css start *************************************/
+/*=====================================
+    blog-post css
+=====================================*/
+.blog-post {
+    position: relative;
+}
+
+/* blog-img css */
+.blog-post .blog-img {
+    position: relative;
+}
+.blog-post .blog-img a {
+    display: block;
+}
+.blog-post .blog-img a.banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-post:hover .blog-img a.banner-img::after {
+  opacity: 0.5;
+  visibility: visible;
+}
+.blog-post:hover .blog-img a.banner-img::after {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.blog-post .blog-img a span.blog-info {
+    color: var(--extra-font-color);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    padding: 8px 15px;
+    background-color: var(--primary-font-color);
+    z-index: 1;
+}
+.blog-post .blog-img a span.blog-info span.blog-name {
+    display: block;
+}
+
+/* blog-content css */
+.blog-post .blog-content {
+    text-align: right;
+    padding: 15px 0px 0px;
+}
+.blog-post .blog-content a.blog-tag {
+    margin: 3px 0px 16px;
+}
+.blog-post .blog-content a.blog-tag h2 {
+    font-size: 18px;
+    line-height: 1;
+}
+.blog-post .blog-content .blog-time-author {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.blog-post .blog-content .blog-time-author span.blog-date-time {
+    color: var(--body-font-color);
+    display: flex;
+}
+.blog-post .blog-content .blog-time-author span.blog-date-time span {
+    display: block;
+    margin: 0px 0px 0px 3px;
+}
+.blog-post .blog-content .blog-time-author span.blog-date-time span:first-child {
+    margin: 0px;
+}
+.blog-post .blog-content .blog-time-author .blog-author {
+    padding: 0px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
+    line-height: 1;
+    border-right: 1px solid var(--border-color)
+}
+.blog-post .blog-content .blog-time-author .blog-author span {
+    display: block;
+}
+
+/* blog-view-wrap css */
+.blog-wrap .blog-view-wrap {
+    margin-top: 40px;
+    text-align: center;
+}
+.blog-wrap .blog-view-wrap a.btn-style2 {
+    padding: 14px 40px;
+}
+/************************************* blog css end *************************************/

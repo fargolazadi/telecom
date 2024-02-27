@@ -1,0 +1,97 @@
+/************************************* blog css start *************************************/
+/*=====================================
+    blog-post css
+=====================================*/
+.blog-post {
+    position: relative;
+}
+
+/* blog-img css */
+.blog-post .blog-img {
+    position: relative;
+}
+.blog-post .blog-img a {
+    display: block;
+}
+.blog-post .blog-img a.banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 50px;
+    border-radius: var(--border-radius);
+}
+.blog-post .blog-img span.blog-info {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.blog-post .blog-img span.blog-date-time {
+    color: var(--extra-font-color);
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-font-color);
+}
+.blog-post .blog-img span.blog-date-time span {
+    display: block;
+    margin: 0px 0px 0px 3px;
+}
+.blog-post .blog-img span.blog-date-time span:first-child {
+    margin: 0px;
+}
+.blog-post .blog-img span.blog-info span.blog-name {
+    color: var(--heading-font-color);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0px 0px;
+    letter-spacing: 1px;
+    line-height: 1;
+    background-color: var(--extra-bgcolor);
+    border-radius: var(--border-radius);
+}
+
+/* blog-content css */
+.blog-post .blog-content {
+    padding: 21px 0px 0px 50px;
+}
+.blog-post .blog-content h2.blog-title {
+    font-size: 20px;
+}
+.blog-post .blog-content p.blog-desc {
+    margin: 13px 0px 0px 0px;
+    font-weight: 300;
+}
+.blog-post .blog-content a.blog-btn {
+    margin: 22px 0px 0px;
+}
+@media (max-width: 1199px) {
+    .blog-post .blog-content h2.blog-title {
+        font-size: 18px;
+    } 
+    .blog-post .blog-content {
+        padding: 16px 0px 0px 50px;
+    } 
+    .blog-post .blog-content p.blog-desc {
+        margin: 8px 0px 0px 0px;
+    } 
+}
+
+/* blog-view-wrap css */
+.blog-wrap .blog-view-wrap {
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
+.blog-wrap .blog-view-wrap a.btn-style2 {
+    padding: 14px 40px;
+}
+/************************************* blog css end *************************************/

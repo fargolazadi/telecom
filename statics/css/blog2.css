@@ -1,0 +1,110 @@
+/************************************* blog css start *************************************/
+/*=====================================
+    blog-post css
+=====================================*/
+.blog-post {
+    position: relative;
+}
+
+/* blog-img css */
+.blog-post .blog-img a.banner-img {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-post .blog-img a.banner-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-font-color);
+  opacity: 0;
+  visibility: hidden;
+}
+.blog-post:hover .blog-img a.banner-img::after {
+  opacity: 0.5;
+  visibility: visible;
+}
+.blog-post:hover .blog-img a.banner-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.blog-post .blog-img a.banner-img img,
+.blog-post:hover .blog-img a.banner-img img {
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* blog-icon css */
+.blog-post .blog-img a span.blog-icon {
+    font-size: 14px;
+    color: var(--secondary-font-color);
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    background-color: var(--extra-bgcolor);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.blog-post:hover .blog-img a span.blog-icon {
+    opacity: 1;
+    visibility: visible;
+}
+.blog-post .blog-img a span.blog-icon:hover {
+    color: var(--extra-font-color);
+    background-color: var(--primary-font-color);
+}
+.blog-post .blog-img a span.blog-date-time {
+    color: var(--extra-font-color);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    padding: 8px 15px;
+    background-color: var(--primary-font-color);
+    z-index: 1;
+}
+.blog-post .blog-img a span.blog-date-time span {
+    display: block;
+    margin: 0px 0px 0px 3px;
+}
+.blog-post .blog-img a span.blog-date-time span:first-child {
+    margin: 0px;
+}
+
+/* blog-content css */
+.blog-post .blog-content {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
+.blog-post .blog-content .blog-tag {
+    margin: 3px 0px 4px;
+}
+.blog-post .blog-content .blog-tag h2 {
+    display: block;
+    font-size: 16px;
+}
+.blog-post .blog-content p.blog-title {
+    margin: 15px 0px 0px;
+}
+.blog-post .blog-content a.blog-btn {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0px 0px;
+    text-transform: uppercase;
+}
+/************************************* blog css end *************************************/

@@ -1,0 +1,105 @@
+/************************************ blog css start ************************************/
+/*=====================================
+    blog-post css
+=====================================*/
+.blog-post {
+    position: relative;
+}
+
+/* blog-img css */
+.blog-post .blog-img {
+    position: relative;
+    border-radius: var(--border-radius);
+}
+.blog-post .blog-img a {
+    display: block;
+}
+.blog-post .blog-img a.banner-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--heading-font-color);
+  opacity: 0;
+  visibility: hidden;
+}
+.blog-post:hover .blog-img a.banner-img::after {
+  opacity: 0.5;
+  visibility: visible;
+}
+.blog-post .blog-img a.banner-img::after,
+.blog-post:hover .blog-img a.banner-img::after {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.blog-post .blog-img .blog-date-time {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: var(--body-bgcolor);
+    line-height: 1;
+    z-index: 1;
+}
+.blog-post .blog-img .blog-date-time span.blog-date {
+    color: var(--heading-font-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+.blog-post .blog-img .blog-date-time span.blog-month-year {
+    display: block;
+    color: var(--heading-font-color);
+    margin: 10px 0px 0px;
+}
+
+/* blog-content css */
+.blog-post .blog-content {
+    margin: 25px 0px 0px 0px;
+}
+.blog-post .blog-content h2.blog-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.blog-post .blog-content p.blog-desc {
+    margin: 17px 0px 0px 0px;
+}
+.blog-post .blog-content a.blog-link {
+    margin: 18px 0px 0px;
+}
+.blog-post .blog-content .blog-comments {
+    margin: 26px 0px 0px;
+}
+.blog-post .blog-content .blog-comments span {
+    color: var(--extra-font-color);
+    padding: 5px 10px;
+    background-color: var(--primary-font-color);
+}
+@media (max-width: 767px) {
+    .blog-post .blog-content {
+        margin: 19px 0px 0px 0px;
+    }
+    .blog-post .blog-content p.blog-desc {
+        margin: 11px 0px 0px 0px;
+    }
+    .blog-post .blog-content a.blog-link {
+        margin: 12px 0px 0px;
+    }
+    .blog-post .blog-content .blog-comments {
+        margin: 20px 0px 0px;
+    }
+}
+
+/* blog-view-wrap css */
+.blog-wrap .blog-view-wrap {
+    margin-top: 40px;
+    text-align: center;
+}
+/************************************ blog css end ************************************/
