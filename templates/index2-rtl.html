@@ -1,6 +1,7 @@
-{%extends 'base.html'%}
+{% extends "base.html" %}
 {% load static %}
 {% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,146 +49,18 @@
 
 <body>
     <!-- popup-wrapper start -->
-    <div class="popup-wrapper" id="popup-wrapper">
-        <div class="modal fade" id="mymodal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-bs-dismiss="modal"><i
-                                class="fa-solid fa-xmark"></i></button>
-                        <div class="popup-info">
-                            <div class="popup-wrap  popup-image">
-                                <img src="{% static 'popup/popup-img.jpg' %}" class="img-fluid" alt="popup-img">
-                            </div>
-                            <div class="popup-wrap  popup-text-news">
-                                <div class="popup-text">
-                                    <h2>Newsletter</h2>
-                                    <p>Sign up here to get 20% off on your next purchase, special offers and other
-                                        discount information.</p>
-                                </div>
-                                <div class="popup-newsletter">
-                                    <form action="/contact#contact_form" method="post" class="contact-form">
-                                        <div class="subscribe-block">
-                                            <input type="email" placeholder="Enter your mail.. " class="email">
-                                            <div class="popup-button">
-                                                <button type="submit"
-                                                    class="btn btn-style popup-btn"><span>Subscribe</span></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
     <!-- popup-wrapper end -->
     <!-- notification-bar start -->
-    <div class="notification-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="notification-content">
-                        <li class="notify-wrap noti-text-wrap">
-                            <div class="noti-text">
-                                <p>Welcome to electon-store Store</p>
-                            </div>
-                        </li>
-                        <li class="notify-wrap user-wrap">
-                            <div class="user-wrapper">
-                                <a class="user-link collapsed" data-bs-toggle="collapse" href="#store-account"
-                                    aria-expanded="false">
-                                    <span class="user-text">My account</span>
-                                </a>
-                                <div class="user-drower collapse" id="store-account">
-                                    <a href="login-account.html">Login</a>
-                                    <a href="create-account.html">Register</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- notification-bar end -->
     <!-- header start -->
 
     <!-- header end -->
     <!-- main start -->
-    <main id="main-content">
+   
         <!-- main-slider start -->
-        <section class="slider-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="home-slider swiper" id="home-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="slider-image-info">
-                                        <div class="slider-image">
-                                            <img src="{% static 'img/slider/home2-slider1.jpg' %}"
-                                                class="img-fluid desk-img" alt="slider1">
-                                            <img src="{% static 'img/slider/mobile2-slider1.jpg' %}"
-                                                class="img-fluid mobile-img" alt="mobile-slider1">
-                                        </div>
-                                        <div class="slider-text-content">
-                                            <div class="slider-text-info slider-content-left slider-text-left">
-                                                <div class="slider-subtitle">
-                                                    <span>Minimalist mobile</span>
-                                                </div>
-                                                <h2><span>Smart mobile shop start from $99</span></h2>
-                                                <a href="collection.html" class="btn btn-style">Shop now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="slider-image-info">
-                                        <div class="slider-image">
-                                            <img src="{% static 'img/slider/home2-slider2.jpg' %}"
-                                                class="img-fluid desk-img" alt="slider2">
-                                            <img src="{% static 'img/slider/mobile2-slider2.jpg' %}"
-                                                class="img-fluid mobile-img" alt="mobile-slider2">
-                                        </div>
-                                        <div class="slider-text-content">
-                                            <div class="slider-text-info slider-content-right slider-text-right">
-                                                <div class="slider-subtitle">
-                                                    <span>New arrival</span>
-                                                </div>
-                                                <h2><span>Portable pocket speaker off</span></h2>
-                                                <a href="collection.html" class="btn btn-style">Shop now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-buttons">
-                                <div class="swiper-buttons-wrap">
-                                    <button class="swiper-prev swiper-prev-home-slider"><span><svg viewBox="0 0 24 24"
-                                                width="16" height="16" stroke="currentColor" stroke-width="2"
-                                                fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                                class="css-i6dzq1">
-                                                <polyline points="15 18 9 12 15 6"></polyline>
-                                            </svg></span></button>
-                                    <button class="swiper-next swiper-next-home-slider"><span><svg viewBox="0 0 24 24"
-                                                width="16" height="16" stroke="currentColor" stroke-width="2"
-                                                fill="none" stroke-linecap="round" stroke-linejoin="round"
-                                                class="css-i6dzq1">
-                                                <polyline points="9 18 15 12 9 6"></polyline>
-                                            </svg></span></button>
-                                </div>
-                            </div>
-                            <div class="swiper-dots">
-                                <div class="swiper-pagination swiper-pagination-home-slider"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
         <!-- main-slider end -->
         <!-- our-service start -->
         <section class="our-service section-pt">
@@ -5833,7 +5706,7 @@
         <!--custom-banner end -->
         <!--deal-product start -->
         <section class="deal-product section-ptb"
-            style="background-image: url('{% static 'img/product/demo2-bgimg.jpg' %}');">
+            style="background-image: '{% static 'img/product/demo2-bgimg.jpg' %}">
             <div class="deal-day">
                 <div class="container">
                     <div class="row">
@@ -7466,7 +7339,8 @@
     <!-- main js -->
     <script src="{% static 'js/main.js' %}"></script>
 
-    {% endblock %}
+    
 </body>
 
 </html>
+{% endblock %}
