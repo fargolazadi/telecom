@@ -113,6 +113,25 @@
                                             </a>
                                         </div>
                                     </li>
+                                    <li class="side-wrap user-wrap">
+                                        <div class="user-wrapper">
+                                            <a class="javascript:void(0)" data-bs-toggle="collapse"
+                                                href="#store-account" aria-expanded="false">
+                                                <span class="user-icon"><svg viewBox="0 0 24 24" width="24" 
+                                                    height="24" stroke="currentColor" stroke-width="2" 
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="css-i6dzq1">
+                                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                                                        </path>
+                                                        <circle cx="12" cy="7" r="4"></circle>
+                                                    </svg></span>
+                                            </a>
+                                            <div class="user-drower collapse" id="store-account">
+                                                <a href="login-account.html">Login</a>
+                                                <a href="create-account.html">Register</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -559,7 +578,7 @@
                                                     </li>
 
                                                     <li class="menu-link">
-                                                        <a href="blog.html" class="link-title">
+                                                        <a href="{% url 'mainapp:faq' %}" class="link-title">
                                                             <span class="sp-link-title">FAQ</span>
                                                         </a>
                                                         <a href="blog.html" data-bs-toggle="collapse"
@@ -869,7 +888,7 @@
         </div>
     </section>
     <!-- main-slider end -->
-    
+
     {% block content %}
 
 

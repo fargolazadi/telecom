@@ -12,3 +12,6 @@ def about_views(request):
 
 def contact_views(request):
     return render(request,'contact-us-2.html')
+
+def faq_views(request):
+    return render(request,'faq.html')

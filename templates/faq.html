@@ -1,7 +1,6 @@
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,64 +52,219 @@
         <div class="loader"></div>
     </div>
     <!-- preloader end -->
-    <!-- popup-wrapper start -->
 
-    <!-- popup-wrapper end -->
-    <!-- notification-bar start -->
 
-    <!-- notification-bar end -->
-    <!-- header start -->
-
-    <!-- header end -->
     <!-- main section start-->
-
-    <!-- main section end-->
-    <!-- footer start -->
-
-    <!-- footer end -->
-    <!-- footer-copyright start -->
-
-    <!-- footer-copyright end -->
-    <!-- search-popup start -->
-    <div class="search-modal modal fade" id="searchmodal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="search-content">
-                                    <div class="search-box">
-                                        <button type="button" class="search-close" data-bs-dismiss="modal"><span><svg
-                                                    viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
-                                                    stroke-width="2" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round" class="css-i6dzq1">
-                                                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                                                </svg></span></button>
-                                        <form action="/search" method="get" class="search-bar">
-                                            <div class="form-search">
-                                                <input type="search" name="q" placeholder="Search here"
-                                                    class="search-input">
-                                                <button type="submit" class="search-btn"><span><svg viewBox="0 0 24 24"
-                                                            width="16" height="16" stroke="currentColor"
-                                                            stroke-width="2" fill="none" stroke-linecap="round"
-                                                            stroke-linejoin="round" class="css-i6dzq1">
-                                                            <circle cx="11" cy="11" r="8"></circle>
-                                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                                        </svg></span></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+    <main>
+   
+        <!-- other page start -->
+        <section class="faq-page section-ptb ">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <!-- faq title start -->
+                        <div class="section-capture">
+                            <div class="section-title">
+                                <h2><span>Frequently asked questions</span></h2>
+                            </div>
+                        </div>
+                        <!-- faq title end -->
+                        <div class="content-qa-banner">
+                            <div class="banner-image banner-hover">
+                                <img src="{% static 'img/other-pages/faq.jpg' %}" class="img-fluid" alt="faq">
+                            </div>
+                            <div class="que-ans">
+                                <ul class="accordian-ul">
+                                    <li class="accordian-li">
+                                        <a href="#template-1" class="accordian" data-bs-toggle="collapse"
+                                            aria-expanded="true">
+                                            <h6 class="acco-text">What is lorem ipsum?</h6>
+                                            <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                        </a>
+                                        <div class="ans-accordian show" id="template-1">
+                                            <p>Lorem ipsum is simply dummy text of the printing and typesetting
+                                                industry.</p>
+                                            <p>Lorem ipsum has been the industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen book.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordian-li">
+                                        <a href="#template-2" class="accordian" data-bs-toggle="collapse">
+                                            <h6 class="acco-text">Why do we use it?</h6>
+                                            <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                        </a>
+                                        <div class="ans-accordian collapse" id="template-2">
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking at its layout.</p>
+                                            <p>The point of using lorem ipsum is that it has a more-or-less normal
+                                                distribution of letters, as opposed to using 'Content here, content
+                                                here', making it look like readable English.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordian-li">
+                                        <a href="#template-3" class="accordian" data-bs-toggle="collapse">
+                                            <h6 class="acco-text">Where does it come from?</h6>
+                                            <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                        </a>
+                                        <div class="ans-accordian collapse" id="template-3">
+                                            <p>It has roots in a piece of classical latin literature from 45 BC, making
+                                                it over 2000 years old.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordian-li">
+                                        <a href="#template-4" class="accordian" data-bs-toggle="collapse">
+                                            <h6 class="acco-text">Where can i get some?</h6>
+                                            <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                        </a>
+                                        <div class="ans-accordian collapse" id="template-4">
+                                            <p>There are many variations of passages of lorem ipsum available, but the
+                                                majority have suffered alteration in some form, by injected humour, or
+                                                randomised words which don't look even slightly believable.</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- search-popup end -->
+        </section>
+        <!-- other page end -->
+        <!-- help-desk start -->
+        <section class=" help-desk section-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ul class="help-wrap">
+                            <li class="desk-wrap">
+                                <div class="help-desk-info">
+                                    <a href="javascript:void(0)"><i class="bi bi-telephone-inbound"></i></a>
+                                    <div class="help-desk-text">
+                                        <h6>Help desk support</h6>
+                                        <p>Lorem ipsum is simply dummy text of the simply dummy typesetting industry
+                                            ipsum.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="desk-wrap">
+                                <div class="help-desk-info">
+                                    <a href="javascript:void(0)"><i class="bi bi-people"></i></a>
+                                    <div class="help-desk-text">
+                                        <h6>Live chat support</h6>
+                                        <p>Lorem ipsum is simply dummy text of the simply dummy typesetting industry
+                                            ipsum.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- help-desk end -->
+        <!-- return policy start -->
+        <section class="ret-page section-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-capture">
+                            <!-- ret title start -->
+                            <div class="section-title">
+                                <h2><span>Return policy</span></h2>
+                            </div>
+                        </div>
+                        <div class="que-ans">
+                            <ul class="accordian-ul">
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-1" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="true">
+                                        <h6 class="acco-text">What is lorem ipsum?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian show" id="collapse-template-1">
+                                        <p>It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.</p>
+                                        <p>It was popularised in the 1960s with the release of letraset sheets
+                                            containing lorem ipsum passages, and more recently with desktop publishing
+                                            software like aldus pageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </li>
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-2" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="false">
+                                        <h6 class="acco-text">Why do we use it?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian collapse" id="collapse-template-2">
+                                        <p>Various versions have evolved over the years, sometimes by accident,
+                                            sometimes on purpose (injected humour and the like).</p>
+                                        <p>Many desktop publishing packages and web page editors now use lorem ipsum as
+                                            their default model text, and a search for 'lorem ipsum' will uncover many
+                                            web sites still in their infancy.</p>
+                                    </div>
+                                </li>
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-3" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="false">
+                                        <h6 class="acco-text">Where can i get some?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian collapse" id="collapse-template-3">
+                                        <p>It uses a dictionary of over 200 latin words, combined with a handful of
+                                            model sentence structures, to generate lorem ipsum which looks reasonable.
+                                        </p>
+                                        <p>The generated lorem ipsum is therefore always free from repetition, injected
+                                            humour, or non-characteristic words etc.</p>
+                                    </div>
+                                </li>
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-4" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="false">
+                                        <h6 class="acco-text">Where does it come from?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian collapse" id="collapse-template-4">
+                                        <p>Richard mcclintock, a latin professor at hampden-sydney college in virginia,
+                                            looked up one of the more obscure latin words, consectetur, from a lorem
+                                            ipsum passage, and going through the cites of the word in classical
+                                            literature, discovered the undoubtable source.</p>
+                                    </div>
+                                </li>
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-5" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="false">
+                                        <h6 class="acco-text">What is lorem ipsum?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian collapse" id="collapse-template-5">
+                                        <p>Richard mcclintock, a latin professor at hampden-sydney college in virginia,
+                                            looked up one of the more obscure latin words, consectetur, from a lorem
+                                            ipsum passage, and going through the cites of the word in classical
+                                            literature, discovered the undoubtable source.</p>
+                                    </div>
+                                </li>
+                                <li class="accordian-li">
+                                    <a href="#collapse-template-6" class="accordian" data-bs-toggle="collapse"
+                                        aria-expanded="false">
+                                        <h6 class="acco-text">Where does it come from?</h6>
+                                        <span class="acco-arrow"><i class="bi bi-chevron-down"></i></span>
+                                    </a>
+                                    <div class="ans-accordian collapse" id="collapse-template-6">
+                                        <p>It has roots in a piece of classical latin literature from 45 BC, making it
+                                            over 2000 years old.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- return policy end -->
+    </main>
+    <!-- main section end-->
+ 
     <!-- cart-drawer start -->
     <div class="cart-drawer" id="cart-drawer">
         <form action="/cart" method="post" class="drawer-contents">
@@ -140,8 +294,7 @@
                             <div class="cart-item-info">
                                 <div class="cart-item-image">
                                     <a href="javascript:void(0)">
-                                        <img src="{% static 'img/menu/shop-banner1.jpg' %}" class="img-fluid"
-                                            alt="cart-1">
+                                        <img src="{% static 'img/menu/shop-banner1.jpg' %}" class="img-fluid" alt="cart-1">
                                     </a>
                                 </div>
                                 <div class="cart-item-details">
@@ -208,8 +361,7 @@
                             <div class="cart-item-info">
                                 <div class="cart-item-image">
                                     <a href="javascript:void(0)">
-                                        <img src="{% static 'img/menu/shop-banner2.jpg' %}" class="img-fluid"
-                                            alt="cart-2">
+                                        <img src="{% static 'img/menu/shop-banner2.jpg' %}" class="img-fluid" alt="cart-2">
                                     </a>
                                 </div>
                                 <div class="cart-item-details">
@@ -276,8 +428,7 @@
                             <div class="cart-item-info">
                                 <div class="cart-item-image">
                                     <a href="javascript:void(0)">
-                                        <img src="{% static 'img/menu/shop-banner3.jpg' %}" class="img-fluid"
-                                            alt="cart-3">
+                                        <img src="{% static 'img/menu/shop-banner3.jpg' %}" class="img-fluid" alt="cart-3">
                                     </a>
                                 </div>
                                 <div class="cart-item-details">
@@ -344,8 +495,7 @@
                             <div class="cart-item-info">
                                 <div class="cart-item-image">
                                     <a href="javascript:void(0)">
-                                        <img src="{% static 'img/menu/shop-banner4.jpg' %}" class="img-fluid"
-                                            alt="cart-4">
+                                        <img src="{% static 'img/menu/shop-banner4.jpg' %}" class="img-fluid" alt="cart-4">
                                     </a>
                                 </div>
                                 <div class="cart-item-details">
@@ -438,83 +588,7 @@
     <!-- bg-scren start -->
     <div class="bg-screen"></div>
     <!-- bg-scren end -->
-    <!-- bottom-menu start -->
-    <div class="bottom-menu">
-        <ul class="bottom-menu-element">
-            <li class="bottom-menu-wrap">
-                <div class="bottom-menu-wrapper">
-                    <a href="index.html" class="bottom-menu-home">
-                        <span class="bottom-menu-icon"><svg viewBox="0 0 24 24" width="24" height="24"
-                                stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                            </svg></span>
-                        <span class="bottom-menu-title">Home</span>
-                    </a>
-                </div>
-            </li>
-            <li class="bottom-menu-wrap">
-                <div class="bottom-menu-wrapper">
-                    <a href="javascript:void(0)" class="bottom-menu-user">
-                        <span class="bottom-menu-icon"><svg viewBox="0 0 24 24" width="24" height="24"
-                                stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" class="css-i6dzq1">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg></span>
-                        <span class="bottom-menu-title">Account</span>
-                    </a>
-                </div>
-            </li>
-            <li class="bottom-menu-wrap">
-                <div class="bottom-menu-wrapper">
-                    <a href="javascript:void(0)" class="bottom-menu-collection">
-                        <span class="bottom-menu-icon"><svg viewBox="0 0 24 24" width="24" height="24"
-                                stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" class="css-i6dzq1">
-                                <rect x="3" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="3" width="7" height="7"></rect>
-                                <rect x="14" y="14" width="7" height="7"></rect>
-                                <rect x="3" y="14" width="7" height="7"></rect>
-                            </svg></span>
-                        <span class="bottom-menu-title">Shop</span>
-                    </a>
-                </div>
-            </li>
-            <li class="bottom-menu-wrap">
-                <div class="bottom-menu-wrapper">
-                    <a href="#searchmodal" data-bs-toggle="modal" class="bottom-menu-search">
-                        <span class="bottom-menu-icon"><svg viewBox="0 0 24 24" width="24" height="24"
-                                stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round" class="css-i6dzq1">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg></span>
-                        <span class="bottom-menu-title">search</span>
-                    </a>
-                </div>
-            </li>
-            <li class="bottom-menu-wrap">
-                <div class="bottom-menu-wrapper">
-                    <a href="javascript:void(0)" class="bottom-menu-wishlist">
-                        <span class="bottom-menu-icon-wrap">
-                            <span class="bottom-menu-icon"><svg viewBox="0 0 24 24" width="24" height="24"
-                                    stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
-                                    stroke-linejoin="round" class="css-i6dzq1">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                                    </path>
-                                </svg></span>
-                            <span class="bottom-menu-counter wishlist-counter">0</span>
-                        </span>
-                        <span class="bottom-menu-title">Wishlist</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <!-- bottom-menu end -->
+
     <!-- jquery js -->
     <script src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
     <!-- bootstrap js -->
@@ -539,4 +613,5 @@
 </body>
 
 </html>
+
 {% endblock %}
